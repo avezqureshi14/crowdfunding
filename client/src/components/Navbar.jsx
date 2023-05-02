@@ -6,7 +6,7 @@ const { Text } = Typography;
 const Navbar = () => {
   return (
     <>
-      <Header>
+      <Header className="navbar_custom_css" >
         <Text strong style={{ color: "#fff" }}>
           Crowdfunding
         </Text>
