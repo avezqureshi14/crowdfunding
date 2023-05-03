@@ -1,7 +1,8 @@
 import React from "react";
 import { Form, Input, Button } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-
+import { useState, useEffect } from "react";
+import { api } from "../json/api";
 const layout = {
   labelCol: {
     span: 8,
@@ -19,6 +20,10 @@ const tailLayout = {
 };
 
 const CampaignForm = () => {
+  const [funds, setFunds] = useState([]);
+  useEffect(() => {
+    setFunds(api);
+  },[]);
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -42,6 +47,7 @@ const CampaignForm = () => {
           <Form.Item
             label="Your Name"
             name="name"
+            className="custom_text_class_generate"
             rules={[
               {
                 required: true,
@@ -55,6 +61,7 @@ const CampaignForm = () => {
           <Form.Item
             label="Campaign Title"
             name="title"
+            className="custom_text_class_generate"
             rules={[
               {
                 required: true,
@@ -68,6 +75,7 @@ const CampaignForm = () => {
           <Form.Item
             label="Story"
             name="story"
+            className="custom_text_class_generate"
             rules={[
               {
                 required: true,
@@ -81,6 +89,7 @@ const CampaignForm = () => {
           <Form.Item
             label="Goal"
             name="goal"
+            className="custom_text_class_generate"
             rules={[
               {
                 required: true,
@@ -94,6 +103,7 @@ const CampaignForm = () => {
           <Form.Item
             label="Campaign Image"
             name="image"
+            className="custom_text_class_generate"
             rules={[
               {
                 required: true,

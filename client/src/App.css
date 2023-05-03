@@ -204,3 +204,16 @@ body{
 
 /* Form  */
 
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff !important;
+}
+
+.custom_text_class_generate{
+  color: #fff;
+}
+
+
