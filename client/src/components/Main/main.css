@@ -8,4 +8,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
+}
+
+
+.mainContainer h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.mainContainer span{
+    color: #3d2a73;
+    font-size: 6rem;
 }

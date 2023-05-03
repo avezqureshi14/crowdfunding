@@ -1,0 +1,21 @@
+import './App.css';
+import Featured from './components/Featured/Featured';
+import Featureds from './components/Featured/Featureds';
+import MyFooter from './components/Footer';
+import Main from './components/Main/Main';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar/>
+      <Main/>
+      <Projects/>
+      <Featureds/>
+      <MyFooter/>
+    </div>
+  );
+}
+
+export default App;

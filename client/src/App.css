@@ -6,8 +6,201 @@
   text-decoration: unset;
   list-style: none;
   font-family: 'Poppins' !important;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #050816 !important;
 }
 
 .navbar_custom_css{
   background-color: #050816 !important;
 }
+
+.button{
+  background-color: #3d2a73;
+  color: #fff;
+}
+.button-rev{
+  background-color: #fff;
+  color: #3d2a73;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 9px 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+::-webkit-scrollbar{
+  background-color: #745db3;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #3d2a73;
+}
+
+.card{
+  background-color: #0e132b;
+  color: #fff;
+  border: transparent;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sha{
+  box-shadow:0 17px 50px 0 rgba(11,20,26,.19),0 12px 15px 0 rgba(11,20,26,.24);
+}
+
+.ant-card-head{
+  color: #fff;
+}
+
+.head_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.danger{
+  background-color: #f75f5f !important;
+  border: transparent;
+  color: #fff !important;
+  margin-top: 10px;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.headers_top{
+  text-align: center;
+  color: #fff;
+}
+
+
+.MainfundingsCampaigns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.footer{
+  background-color: #0e132b;
+  color: #fff;
+}
+
+.ongoing{
+  background-color: green !important;
+  border: transparent;
+  color: #fff !important;
+  margin-top: 10px;
+}
+
+
+
+
+
+.single-post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.single-post-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ant-typography h2 {
+  margin-bottom: 24px;
+}
+
+.ant-input-textarea {
+  font-size: 16px;
+}
+
+.loginContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.about-container{
+  height: 80vh;
+  margin: 3rem;
+}
+
+.contact-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.writeContainer{
+  height: 100vh;
+}
+
+.content{
+  margin: 0rem 1rem;
+}
+
+.buttons button{
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.item input{
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.statusContainer span{
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.radioBtns{
+  margin-top: 1rem;
+  margin-right: 1rem; 
+}
+
+.content input{
+  margin-bottom: 1rem;
+}
+
+.ql-editor p{
+  height: 50vh;
+}
+
+.createCampaign button{
+  padding: 10px 12px;
+  width: 281px;
+  text-align: center;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+/* Form  */
+

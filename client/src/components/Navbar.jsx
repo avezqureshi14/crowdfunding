@@ -1,6 +1,5 @@
 import React from "react";
 import { Layout, Menu, Button, Typography } from "antd";
-
 const { Header } = Layout;
 const { Text } = Typography;
 const Navbar = () => {
@@ -12,7 +11,7 @@ const Navbar = () => {
         </Text>
 
         <div style={{ float: "right" }}>
-          <Button type="primary">0xc...D26</Button>
+          <Button className="button" type="primary">0xc...D26</Button>
         </div>
       </Header>
     </>

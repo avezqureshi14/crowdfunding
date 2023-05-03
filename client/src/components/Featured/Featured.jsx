@@ -2,7 +2,7 @@ import { Card, Button, Slider } from 'antd';
 import { createFromIconfontCN } from '@ant-design/icons';
 import { useState } from 'react';
 
-const Project = () => {
+const Featured = () => {
   const [raisedAmount, setRaisedAmount] = useState(0);
 
   const handleSliderChange = (value) => {
@@ -24,11 +24,11 @@ const Project = () => {
         dark
         className='card sha'
       >
-      <div style={{cursor:"pointer"}} className="head_name">
+      <div className="head_name">
       <h4>Hospitalization Purpose</h4>
       <div>0x7a...8b15 <EthereumIcon type="icon-ethereum" /></div>
       </div>
-        <p><strong>Status:</strong> Ongoing</p>
+        <p><strong>Status:</strong> Expired</p>
         <p><strong>Funds Raised:</strong> {raisedAmount} ETH</p>
         <Slider
           min={0}
@@ -37,13 +37,14 @@ const Project = () => {
           defaultValue={0.3}
           onChange={handleSliderChange}
           trackStyle={{ backgroundColor: '#3d2a73' }}
+          disabled
         />
         <p><strong>Goal:</strong> 1 ETH</p>
         <p><strong>Backers:</strong> 0</p>
-        <Button className='ongoing' type="primary" disabled>Ongoing</Button>
+        <Button className='danger' type="primary" disabled>Expired</Button>
       </Card>
     </>
   );
 };
 
-export default Project;
+export default Featured;
